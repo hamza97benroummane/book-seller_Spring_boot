@@ -1,0 +1,10 @@
+package com.hmz.spring_boot_book_seller.service;
+
+import com.hmz.spring_boot_book_seller.model.Book;
+
+public interface IBookService {
+
+    Book saveBook(Book book);
+
+    void deleteBook(Long id);
+}
