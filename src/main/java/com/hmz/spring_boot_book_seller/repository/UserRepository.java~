@@ -1,0 +1,2 @@
+package com.hmz.spring_boot_book_seller.repository;public class UserRepository {
+}
