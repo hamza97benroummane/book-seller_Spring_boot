@@ -22,12 +22,9 @@ public class SecurityUtils {
 
     public static String extractAuthTokenFromRequest(HttpServletRequest request){
         String bearerToken = request.getHeader(AUTH_HEADER);
-
-        if(StringUtils.hasText(bearerToken) && bearerToken.startsWith(AUTH_TOKEN_PREFIX)){
-            return bearerToken.substring(7);
-        }
-        return null;
+        if(StringUtils.hasText(bearerToken) && bearerToken.startsWith(AUTH_TOKEN_PREFIX))
+            return bearerToken.substring(AUTH_TOKEN_PREFIX.length()); // remove Bearer from the string)
     }
-
+    return null;
 
 }

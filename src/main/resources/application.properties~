@@ -14,4 +14,4 @@ spring.jpa.show-sql=true
 
 
 app.jwt.secret=RandomSecretKey
-app.jwt.expiration-in-ms=60480000
+app.jwt.expiration
