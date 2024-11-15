@@ -11,5 +11,5 @@ public interface IUserService {
     @Transactional
     void makeAdmin(String username);
 
-    User saveUser(User user);
+    Object saveUser(User user);
 }
